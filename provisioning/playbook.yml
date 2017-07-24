@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  gather_facts: False
+
+  tasks:
+  - name: Ensure git is installed.
+    yum:
+      name: git
+      state: installed
