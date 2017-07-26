@@ -1,0 +1,13 @@
+textarea {
+    padding: 3px;
+    resize: none;
+    width:500px;
+    height:250px;
+    border:1px solid #eee;
+    background-color:#FBFCFC;
+}
+
+div{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

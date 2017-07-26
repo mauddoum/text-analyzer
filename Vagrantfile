@@ -14,16 +14,16 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |v|
     v.name = "text-analyzer"
-    v.customize ["modifyvm", :id, "--cpuexecutioncap", "100"]
+    v.customize ["modifyvm", :id, "--cpuexecutioncap", "99"]
     v.customize ["modifyvm", :id, "--memory", $MEMORY]
     v.customize ["modifyvm", :id, "--cpus", $CPUS]
 
   end
-end
-
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "provisioning/playbook.yml"
     ansible.sudo = true
     ansible.limit = "all"
   end
+
+end
