@@ -7,5 +7,15 @@
 
 <!-- <div> {{ text }} </div> -->
 
-<div> {{ text.length }} characters (space included)
+<div *ngIf='text'> {{ text.length }} characters (space included)
+</div>
+
+<div>
+    <button (click)="getTextAnalytics()">Get Analytics</button>
+</div>
+
+<p> {{ iD }} </p>
+
+<div *ngIf='options'>
+  <chart [options]="options"></chart>
 </div>

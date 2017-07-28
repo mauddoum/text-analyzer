@@ -35,7 +35,8 @@
     "dataSource": "db",
     "public": false
   },
-  "Message": {
-    "dataSource": null
+  "Text": {
+    "dataSource": "db",
+    "public": true
   }
 }
